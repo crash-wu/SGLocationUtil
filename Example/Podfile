@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SGLocationUtil_Example' do
+  pod 'SGLocationUtil', :path => '../'
+
+  target 'SGLocationUtil_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
