@@ -1,13 +1,10 @@
 platform :ios,'8.0'
 use_frameworks!
 
+pod 'SGTileLayer','~> 0.0.1'
+
 target 'SGLocationUtil_Example' do
-  pod 'SGTileLayer'
+
   pod 'SGLocationUtil', :path => '../SGLocationUtil.podspec'
 
-#  target 'SGLocationUtil_Tests' do
-#    inherit! :search_paths
-#
-#    
-#  end
 end

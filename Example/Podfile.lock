@@ -4,7 +4,7 @@ PODS:
 
 DEPENDENCIES:
   - SGLocationUtil (from `../SGLocationUtil.podspec`)
-  - SGTileLayer
+  - SGTileLayer (~> 0.0.1)
 
 EXTERNAL SOURCES:
   SGLocationUtil:
@@ -14,6 +14,6 @@ SPEC CHECKSUMS:
   SGLocationUtil: 24139003a7f3a4044f46d7b973e8d2eb38225cab
   SGTileLayer: 733caf9ffc1d952e5e62030b04ba5c0d5576e7e8
 
-PODFILE CHECKSUM: df65bcb6291a660a82ffa106ec6fdc408c9b4312
+PODFILE CHECKSUM: 12aeb2be5706feb435115a6e3f482c3f1945feaf
 
 COCOAPODS: 1.0.1

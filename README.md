@@ -5,11 +5,30 @@
 [![License](https://img.shields.io/cocoapods/l/SGLocationUtil.svg?style=flat)](http://cocoapods.org/pods/SGLocationUtil)
 [![Platform](https://img.shields.io/cocoapods/p/SGLocationUtil.svg?style=flat)](http://cocoapods.org/pods/SGLocationUtil)
 
+## Describe
+基于ArcGis加载天地图瓦片的定位功能
+
+## Usage
+    //=======================================//
+    //          MARK: 单例模式                 //
+    //=======================================//
+    public static let sharedInstance = SGLocationUtil()
+
+    /**
+    获取用户当前位置信息,并且展示到地图上
+
+    :param: mapView     当前地图
+
+    :param: symbolImage 显示图标名称
+    */
+    public func getUserLocation (mapView:AGSMapView,symbolImage:String)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+    ArcGIS-Runtime-SDK-iOS for version 10.2.5
 
 ## Installation
 
@@ -22,7 +41,7 @@ pod "SGLocationUtil"
 
 ## Author
 
-吴小星, xiaoxing.wu@southgis.com
+吴小星, crash_wu@163.com
 
 ## License
 

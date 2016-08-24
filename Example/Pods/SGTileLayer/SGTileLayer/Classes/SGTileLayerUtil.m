@@ -8,7 +8,7 @@
 
 #import "SGTileLayerUtil.h"
 
-static SGTileLayerUtil *_instance;
+//static SGTileLayerUtil *_instance;
 
 @implementation SGTileLayerUtil
 
@@ -22,12 +22,20 @@ static SGTileLayerUtil *_instance;
  */
 +(nonnull instancetype)sharedInstance
 {
-
+    static SGTileLayerUtil *instance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _instance = [[self alloc] init];
+        instance = [[self alloc] init];
     });
-    return _instance;
+    return instance;
+}
+
+-(instancetype) init{
+    if (self = [super init])
+    {
+        
+    }
+    return self;
 }
 
 /**

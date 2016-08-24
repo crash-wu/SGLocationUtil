@@ -16,11 +16,11 @@ import ArcGIS
  */
 public class SGLocationUtil: NSObject ,CLLocationManagerDelegate{
 
-    var currentLocationPoint  = AGSPoint()//当前定位坐标
-    var currentMapView  = AGSMapView() //当前地图
-    var location : CLLocationManager!
-    var symbolImage = String()
-    var locationLayer = AGSGraphicsLayer()
+   lazy var currentLocationPoint  = AGSPoint()//当前定位坐标
+   lazy var currentMapView  = AGSMapView() //当前地图
+        var location : CLLocationManager!
+   lazy var symbolImage = String()
+   lazy var locationLayer = AGSGraphicsLayer()
     
     //=======================================//
     //          MARK: 单例模式                 //

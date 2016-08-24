@@ -28,6 +28,9 @@ class MapViewController: UIViewController {
         locationBtn.frame = CGRectMake(0, self.view.frame.size.height - 100, 50, 50)
         locationBtn.backgroundColor = UIColor.redColor()
         locationBtn.addTarget(self, action: #selector(MapViewController.location(_:)), forControlEvents: .TouchUpInside)
+        
+
+
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -46,13 +49,14 @@ class MapViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
+        
         SGTileLayerUtil.sharedInstance().loadTdtTileLayer(WMTS_VECTOR_2000, andMapView: self.mapView)
+        
     }
     
     @objc private func location(button:UIButton){
         
-        SGLocationUtil.sharedInstance.getUserLocation(self.mapView, symbolImage: "终点")
-        
+        SGLocationUtil.sharedInstance.getUserLocation(self.mapView, symbolImage: "终点")        
     }
     
 }
