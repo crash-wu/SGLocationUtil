@@ -23,6 +23,13 @@
     */
     public func getUserLocation (mapView:AGSMapView,symbolImage:String)
 
+    /**
+    获取当前用户用户位置坐标
+
+    :returns: 用户位置坐标
+    */
+    public func getUserPoint()->AGSPoint
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
