@@ -60,6 +60,16 @@ public class SGLocationUtil: NSObject ,CLLocationManagerDelegate{
         
     }
     
+    /**
+     获取当前用户用户位置坐标
+     
+     :returns: 用户位置坐标
+     */
+    public func getUserPoint()->AGSPoint{
+        
+        return self.currentLocationPoint
+    }
+    
     public func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
         
         switch status {
